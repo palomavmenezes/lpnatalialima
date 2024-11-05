@@ -1,9 +1,8 @@
-// src/components/home.tsx
 import React from 'react';
 import Button from '../elements/button';
 import SocialMedia from '../elements/socialmedia';
 
-const Home: React.FC = () => {
+const Banner: React.FC = () => {
   const data = {
     title: 'Transforme sua presença digital com conteúdo autêntico e estratégico!',
     description: 'Você nunca mais vai precisar contratar um serviço ou curso genérico para tentar destacar sua marca no digital!',
@@ -21,6 +20,29 @@ const Home: React.FC = () => {
         perfil: 'natalialima',
         icon: 'linkedin'
       }
+    ],
+    troubles: [
+      {
+        number: 1,
+        title: 'Já contratou um social media...',
+        description: 'Mas só recebeu posts genéricos? Vamos criar estratégias com identidade para engajar sua marca.'
+      },
+      {
+        number: 2,
+        title: 'Comprou um curso de MKT...',
+        description: 'Mas você não tem como acumular mais essa função. Eu posso cuidar da sua estratégia enquanto você foca no que você não pode delegar.'
+      },
+      {
+        number: 3,
+        title: 'Não sabe onde investir...',
+        description: 'Vamos, juntos, escolher as ferramentas certas, aquelas que trazem resultados e otimizam seu tempo e investimento.'
+      },
+      {
+        number: 4,
+        title: 'Não conhece bons profissionais...',
+        description: 'Eu conecto você a profissionais de confiança, especialistas em design, tráfego e mais, para uma estratégia completa.'
+      }
+      
     ]
   };
 
@@ -50,4 +72,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Banner;
