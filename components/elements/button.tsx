@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({ label, onClick, bgColor, textColor, bgH
   return (
     <button 
       onClick={onClick} 
-      className={`${bgColor} ${textColor} ${textHover} ${bgHover} ${borderColor} uppercase mt-5 px-6 py-3 rounded-none transition duration-500 transform border`}
+      className={`${bgColor} ${textColor} ${textHover} ${bgHover} ${borderColor} uppercase mt-5 px-6 py-3 font-bold rounded-none transition duration-500 transform border`}
     >
       {label}
     </button>
