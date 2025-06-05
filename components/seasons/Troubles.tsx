@@ -39,31 +39,31 @@ const Troubles: React.FC = () => {
     <section className='troubles-section'>
       <div className="bg-dark mx-auto my-10 container">
         <div className="gap-4 md:grid md:grid-cols-12 text-light">
-            <div className="md:col-span-8 p-10">
-                <h2 className="mb-2 font-semibold text-3xl">{data.title}</h2>
-                <Numbers 
-                    cards={data.troubles}
-                />
-                <Button 
-                label={data.label}
-                onClick={handleClick}
-                bgColor="bg-light"
-                textColor="text-black"
-                bgHover='hover:bg-transparent'
-                textHover="hover:text-light"
-                borderColor='border-light'
-                />
-            </div>
-          
-            <div className="md:col-span-4 m-0 p-0">
-                <Image
-                    src="/img/imagem-escritorio-de-marketing-digital-em-frente-ao-pao-de-acucar-rio-de-janeiro.png"
-                    alt="Imagem do escritório de Marketing Digital em frente ao Pão de Açúcar, no Rio de Janeiro."
-                    width={500}
-                    height={100}
-                    className='justify-self-end h-full'
-                />
-            </div>
+          <div className="md:col-span-8 p-10">
+            <h2 className="mb-2 font-semibold text-3xl">{data.title}</h2>
+            <Numbers
+              cards={data.troubles}
+            />
+            <Button
+              label={data.label}
+              onClick={handleClick}
+              bgColor="bg-light"
+              textColor="text-black"
+              bgHover='hover:bg-transparent'
+              textHover="hover:text-light"
+              borderColor='border-light'
+            />
+          </div>
+
+          <div className="md:col-span-4 m-0 p-0">
+            <Image
+              src="/img/imagem-escritorio-de-marketing-digital-em-frente-ao-pao-de-acucar-rio-de-janeiro.png"
+              alt="Imagem do escritório de Marketing Digital em frente ao Pão de Açúcar, no Rio de Janeiro."
+              width={500}
+              height={100}
+              className='justify-self-end h-full'
+            />
+          </div>
         </div>
       </div>
     </section>

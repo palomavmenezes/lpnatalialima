@@ -32,6 +32,10 @@ h6 {
     font-size: 1.25rem;
 }
 
+.swiper-pagination-bullet {
+    background: white;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
