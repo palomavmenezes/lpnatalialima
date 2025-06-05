@@ -18,7 +18,7 @@ const ContentCards: React.FC<ContentCardsProps> = ({ cards }) => {
                 {cards.map(({ title, description, circleNumber }, index) => (
                     <div key={index} className="md:col-span-6">
                         <header>
-                            <h6 className='flex items-center gap-4 mt-5 md:text-2xl'>
+                            <h6 className='flex items-center gap-4 mt-5 md:text-xl'>
                                 <span className="relative flex justify-center items-center bg-light md:rounded-full w-12 h-12 font-bold text-dark"
                                 >
                                     {circleNumber}
@@ -27,7 +27,7 @@ const ContentCards: React.FC<ContentCardsProps> = ({ cards }) => {
                             </h6>
                         </header>
                         <article>
-                            <p className='font-normal'>{description}</p>
+                            <p className='font-normal mt-3'>{description}</p>
                         </article>
                     </div>
                 ))}
