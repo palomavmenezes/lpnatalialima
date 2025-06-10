@@ -10,7 +10,9 @@ const About: React.FC = () => {
   };
 
   const handleClick = () => {
-    alert('Botão clicado!');
+    const message = encodeURIComponent('Olá quero agendar uma consultoria.');
+    const whatsappNumber =  process.env.NEXT_PUBLIC_PHONE_NUMBER || '55999999999';
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
   };
 
   return (

@@ -32,7 +32,9 @@ const Troubles: React.FC = () => {
   };
 
   const handleClick = () => {
-    alert('Botão clicado!');
+    const message = encodeURIComponent('Olá preciso de ajuda com minha estratégia de marketing digital. Gostaria de agendar uma consultoria.');
+    const whatsappNumber =  process.env.NEXT_PUBLIC_PHONE_NUMBER || '55999999999';
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
   };
 
   return (

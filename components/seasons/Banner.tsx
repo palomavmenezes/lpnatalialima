@@ -5,7 +5,7 @@ import SocialMedia from '../elements/socialmedia';
 const Banner: React.FC = () => {
   const data = {
     title: 'Transforme sua presença digital com conteúdo autêntico e estratégico!',
-    description: 'Você nunca mais vai precisar contratar um serviço ou curso genérico para tentar destacar sua marca no digital!',
+    description: 'Você nunca mais vai precisar contratar um serviço ou curso genérico para tentar se destacar!',
     label: 'Agendar meu diagnóstico gratuito!',
     socials: [
       {
@@ -47,7 +47,9 @@ const Banner: React.FC = () => {
   };
 
   const handleClick = () => {
-    alert('Botão clicado!');
+    const message = encodeURIComponent('Olá quero agendar meu diagnóstico gratuito!');
+    const whatsappNumber =  process.env.NEXT_PUBLIC_PHONE_NUMBER || '55999999999';
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
   };
 
   return (
@@ -55,7 +57,7 @@ const Banner: React.FC = () => {
       <div className="flex justify-center mx-auto container">
         <div className="flex-row content-center bg-opacity-70 p-4 max-w-5xl h-screen text-center text-light">
           <SocialMedia platforms={data.socials} />
-          <h1 className="mb-2 font-semibold text-5xl">{data.title}</h1>
+          <h1 className="mb-2 font-semibold text-5xl max-sm:text-3xl">{data.title}</h1>
           <p className="mx-auto mb-4 max-w-2xl text-xl">{data.description}</p>
           <Button 
             label={data.label}

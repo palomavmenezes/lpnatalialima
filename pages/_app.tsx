@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import Footer from '../components/seasons/Footer';
 import "../assets/globals.css";
 import "../assets/home/banner.css";
 
@@ -18,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </main>
       <footer>
-        {/* Adicione aqui o componente de rodapé global, se houver */}
+        <Footer />
       </footer>
     </>
   );

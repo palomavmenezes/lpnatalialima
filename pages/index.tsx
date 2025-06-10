@@ -5,7 +5,6 @@ import About from '../components/seasons/About';
 import Transform from '../components/seasons/Transform';
 import Testimony from '../components/seasons/Testimony'
 import Contact from '../components/seasons/Contact';
-import Footer from '../components/seasons/Footer';
 
 const Home: React.FC = () => {
   return (
@@ -16,7 +15,6 @@ const Home: React.FC = () => {
       <Transform />
       <Testimony />
       <Contact />
-      <Footer />
     </main>
   );
 };
