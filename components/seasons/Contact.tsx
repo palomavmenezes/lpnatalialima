@@ -24,7 +24,8 @@ const Contact: React.FC = () => {
             `Telefone: ${formData.phone}%0A` +
             `Necessidade: ${formData.need}`;
 
-        const whatsappLink = `https://wa.me/5521987557775?text=${whatsappMessage}`;
+        const whatsappNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER;
+        const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
         window.open(whatsappLink, '_blank');
     };
 
