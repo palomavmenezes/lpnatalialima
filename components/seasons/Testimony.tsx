@@ -3,7 +3,7 @@ import Quotes from '../elements/testimony'
 
 const Testimony: React.FC = () => {
   const data = {
-    title: 'Título',
+    title: 'Depoimentos de parceiros e clientes',
     depoimentos: [
       { 
         name: 'Giovana Oliveira (UX Designer)', 
@@ -29,7 +29,7 @@ const Testimony: React.FC = () => {
   return (
     <section className="testimony-section bg-dark mt-10">
       <div className="container mx-auto pt-10 pb-6">
-        <h2>{data.title}</h2>
+        <h2 className='text-light p-5 font-bold text-3xl'>{data.title}</h2>
         
         <Quotes
           testimonies={data.depoimentos}
